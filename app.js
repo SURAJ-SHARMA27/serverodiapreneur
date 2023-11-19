@@ -10,8 +10,8 @@ app.use(require('./router/auth'));
 const PORT=process.env.PORT;
 
 
-app.get('/signup',(req,res)=>{
-    res.send("hello signup is server");
+app.get('/',(req,res)=>{
+    res.json({message : "Server is working"});
 });
 app.listen(PORT,()=>{
     console.log(`server is running at port no ${PORT}`);
